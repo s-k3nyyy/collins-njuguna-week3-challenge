@@ -1,4 +1,4 @@
-// Base URL for API
+//write your code here
 const baseURL = 'http://localhost:3000';
 
 // Function to fetch films from the server
@@ -18,7 +18,7 @@ async function fetchFilms() {
 // Function to render the film list in the side menu
 function renderFilmList(films) {
     const filmsList = document.getElementById('films');
-    filmsList.innerHTML = ''; // Clear previous content
+    filmsList.innerHTML = ''; // Clears previous content 
     films.forEach(film => {
         const li = document.createElement('li');
         li.textContent = film.title;
@@ -128,4 +128,4 @@ async function deleteFilm(filmId) {
         console.error(error);
     }
 }
-fetchFilms();
+fetchFilms();//fetches all the data
